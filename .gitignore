@@ -1,0 +1,8 @@
+.DS_Store
+node_modules
+public/
+production.aws.json
+npm-debug.log
+config/development.json
+lib/posts/json/
+lib/webfonts
