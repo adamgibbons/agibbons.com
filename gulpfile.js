@@ -153,7 +153,7 @@ gulp.task('markdown', ['clean:posts-json'], function() {
 });
 
 gulp.task('favicon', function() {
-  return gulp.src('./lib/favicon.ico')
+  return gulp.src('./lib/favicon*.png')
     .pipe(gulp.dest('./public'));
 });
 
