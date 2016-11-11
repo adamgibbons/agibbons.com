@@ -63,6 +63,11 @@ a {
       &:first-child {
         margin-left: 0;
       }
+      &.active {
+        text-decoration: underline;
+        cursor: default;
+        pointer-events: none;
+      }
     }
   }
 }
@@ -87,14 +92,19 @@ a {
 
   .project {
     text-align: center;
-    // font-weight: 100;
     display: block;
     vertical-align: bottom;
     .logo {
+      .transition(background-color .2s linear);
       height: 10em;
       margin: 0 0 .66em;
       padding: 3.33em 1em;
       border: 1px solid #ddd;
+
+      &:hover {
+        background-color: #ddd;
+        cursor: pointer;
+      }
       img {
         margin: auto;
         width: 10em;
