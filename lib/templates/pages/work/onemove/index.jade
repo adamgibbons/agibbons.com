@@ -1,0 +1,99 @@
+extends ../../../layouts/base
+
+block seo-meta
+  title Contact Me | Adam Gibbons
+  meta(name="description" content="Want to learn more? Fill out this form, call, or email Adam.")
+
+block seo-breadcrumbs
+  script(type="application/ld+json").
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "http://agibbons.com/",
+          "name": "Home"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@id": "http://agibbons.com/work/",
+          "name": "Work"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "http://agibbons.com/work/onemove/",
+          "name": "OneMove"
+        }
+      }]
+    }
+
+block content
+  .container
+    .header-1 OneMove
+    .subheader-1 Marketplace for local/independent moving companies
+    .tags.text-center
+      span.label.label-default(style="margin-right:1em;") Web Application
+      span.label.label-default Static website
+
+    .row
+      .col-sm-10.col-sm-offset-1
+
+        p OneMove is a web platform enabling local and independent moving companies within the OneMove Network to perform interstate moves. The platform's real-time pricing engine calculates the costs for freight transportation, origin and destination labor, and any additional services, and allows users to book shipments instantly.
+
+        p We developed a web application for businesses in the OneMove Network, and a static site to acquire end-customers directly.
+
+    //- https://angel.co/onemove
+    //- https://onemove.net
+
+    //- trigger modal
+    .hidden
+      p: img#img-1.img-responsive(src="/images/work/onemove/onemove-app-01.png")
+
+    //- the modal
+    .hidden#my-modal.modal
+
+      p.text-center
+        span#prev prev
+        |  
+        span#next next
+
+      //- close button
+      span#close.close &times;
+
+      //- modal content (img)
+      img#img-1.modal-content(src="/images/work/onemove/onemove-app-01.png")
+
+      //- modal caption (img text)
+      #caption mer mer
+
+    //- nav tabs
+    ul.nav.nav-tabs.nav-tabs-work(role="tablist")
+      li.active: a(href="#app" data-toggle="tab" role="presentation" data-tab) Web Application
+      li: a(href="#site" data-toggle="tab" role="presentation" data-tab) Website
+
+    .tab-content
+
+      .tab-pane.fade.in.active#app(role="tabpanel")
+        .img-wrapper: img.img-responsive(src="/images/work/onemove/onemove-app-01.png")
+        .img-wrapper: img.img-responsive(src="/images/work/onemove/onemove-app-02.png")
+        .img-wrapper: img.img-responsive(src="/images/work/onemove/onemove-app-03.png")
+        .img-wrapper: img.img-responsive(src="/images/work/onemove/onemove-app-04.png")
+        .img-wrapper: img.img-responsive(src="/images/work/onemove/onemove-app-05a.png")
+        .img-wrapper: img.img-responsive(src="/images/work/onemove/onemove-app-05b.png")
+        .img-wrapper: img.img-responsive(src="/images/work/onemove/onemove-app-06.png")
+        .img-wrapper: img.img-responsive(src="/images/work/onemove/onemove-app-07.png")
+        .img-wrapper: img.img-responsive(src="/images/work/onemove/onemove-app-08.png")
+
+      .tab-pane.fade#site(role="tabpanel")
+        .img-wrapper: img.img-responsive(src="/images/work/onemove/onemove-page-home-desktop.png")
+        .img-wrapper: img.img-responsive(src="/images/work/onemove/onemove-page-home-mobile.png")
+        .img-wrapper: img.img-responsive(src="/images/work/onemove/onemove-page-about-desktop.png")
+        .img-wrapper: img.img-responsive(src="/images/work/onemove/onemove-page-about-mobile.png")

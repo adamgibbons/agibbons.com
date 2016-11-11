@@ -1,0 +1,45 @@
+include ../mixins/mixins
+
+doctype html
+
+html(lang="en")
+
+  head
+    //- meta(name="google-site-verification" content="WrvLAybH0iJfVJrDMln9IZn5uiseOu6SaK6mfts7mHw")
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+
+    block seo-meta
+    block seo-breadcrumbs
+
+    if env === 'development'
+        link(href="/styles.css" rel="stylesheet")
+    else
+        // inject:css
+        // link(href="styles.css" rel="stylesheet")
+        // endinject
+
+    //- link(href="/webfonts/ss-standard.css" rel="stylesheet")
+
+  body
+
+    .header
+      .container
+        include ../partials/header.jade
+
+    .content
+        block content
+
+    .footer
+        include ../partials/footer.jade
+
+    //- include ../partials/google-analytics.jade
+
+    if env === 'development'
+        script(src="/adam-gibbons.js")
+
+    else
+        // inject:js
+        // script(src="adam-gibbons.js")
+        // endinject

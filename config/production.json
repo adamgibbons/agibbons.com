@@ -1,0 +1,5 @@
+{
+  "NODE_ENV": "production",
+  "API": "api.agibbons.com",
+  "GA_ID": "UA-41357777-1"
+}
