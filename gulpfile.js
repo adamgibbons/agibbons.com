@@ -21,7 +21,7 @@ var gulp        = require('gulp')
 var scripts = [
   'lib/scripts/jquery.min.js',
   'lib/scripts/bootstrap.min.js',
-  'lib/scripts/navbar.js'
+  'lib/scripts/interactions.js'
 ];
 
 //Wraps a stream in a promise
