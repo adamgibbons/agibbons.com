@@ -1,17 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
 
-// Bootstrap framework and overrides
 @import '../../node_modules/bootstrap/less/bootstrap';
-
-@alizarin: #e74c3c;
-@pomegranate: #c0392b;
-
-@belize-hole: #2980b9;
-@peter-river: #3498db;
-
-@header-bg: @peter-river;
-@bright-bg: @belize-hole;
-
+@import './colors';
+@import './mixins';
 
 html {
   height: 100%;
@@ -21,7 +12,7 @@ body {
   font-size: 20px;
   font-family: 'Open Sans', sans-serif;
 
-  // begin stick footer
+  // flexbox sticky footer
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -38,11 +29,15 @@ a {
   padding: 1em 0;
   background-color: @header-bg;
   color: white;
-  .cartoon {
-    text-align: right;
+  #cartoon {
+    text-align: center;
+    .transition(all, .2s, ease-out);
+    &:hover {
+      .transform(4deg, 1.05, 0, 0);
+    }
     img {
-      // max-width: 100%;
       height: 5em;
+      text-align: center;
     }
   }
   .name {
@@ -150,9 +145,6 @@ a {
 .tags {
   margin: 0 0 2em;
 }
-
-
-
 
 .img-wrapper {
   margin-bottom: 1em;
