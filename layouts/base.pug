@@ -1,0 +1,21 @@
+doctype(html)
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    title=title
+    meta(name="description" content=description)
+    link(type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.min.css" rel="stylesheet")
+    link(type="text/css" href="/styles/index.css" rel="stylesheet")
+
+  body
+    .main
+      .header
+        include includes/header.pug
+      .content
+        block content
+    .footer
+      include includes/footer.pug
+
+    //- script(src="/scripts/jquery.js")
+    script(src="/scripts/index.js")
+    block scripts

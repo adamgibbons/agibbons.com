@@ -11,27 +11,20 @@
   "author": "Adam Gibbons <adam@agibbons.com>",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^3.3.5",
-    "jquery": "^2.1.4"
+    "browserify": "^14.1.0",
+    "bulma": "^0.4.2",
+    "dotenv": "^4.0.0",
+    "metalsmith": "^2.1.0",
+    "metalsmith-browserify": "^0.2.4",
+    "metalsmith-layouts": "^1.4.1",
+    "metalsmith-less": "^2.0.0",
+    "metalsmith-markdown": "^0.2.1",
+    "metalsmith-permalinks": "^0.5.0",
+    "metalsmith-watch": "^1.0.3",
+    "pug": "^2.0.0-beta11",
+    "s3-upload-dir": "^0.1.0",
+    "watchify": "^3.9.0"
   },
-  "devDependencies": {
-    "del": "^2.1.0",
-    "gulp": "^3.9.0",
-    "gulp-concat": "^2.6.0",
-    "gulp-env": "^0.4.0",
-    "gulp-inject": "^3.0.0",
-    "gulp-jade": "^1.1.0",
-    "gulp-less": "^3.0.5",
-    "gulp-live-server": "0.0.29",
-    "gulp-markdown-to-json": "^0.2.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-rev": "^7.0.0",
-    "gulp-s3": "^0.3.0",
-    "jstransformer-marked": "^1.0.1",
-    "less-plugin-clean-css": "^1.5.1",
-    "lodash": "^4.6.1",
-    "q": "^1.4.1",
-    "run-sequence": "^1.1.5"
-  },
+  "devDependencies": {},
   "private": true
 }

@@ -1,0 +1,26 @@
+extends base.pug
+
+block content
+  .dark-bg
+    .container.has-text-centered
+      p I'm a web developer based in Boulder, Colorado. I freelance with startups, agencies, and nonprofits to design and build rich, responsive web applications and interactive user interfaces.
+
+  .container
+    .title.is-3.has-text-centered Recent Work
+    .columns
+      .column.has-text-centered
+        .work
+          .img-wrapper
+            img(src="/images/onemove.png")
+          a OneMove (web app)
+      .column.has-text-centered
+        .work
+          .img-wrapper
+            img(src="/images/moveline.png")
+          a Moveline (web app)
+      .column.has-text-centered
+        .work
+          .img-wrapper
+            img(src="/images/ics.png")
+          a ICS (Node.js package)
+
