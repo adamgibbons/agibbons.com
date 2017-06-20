@@ -1,26 +1,31 @@
 extends base.pug
 
 block content
-  .dark-bg
+  .home
+    .dark-bg
+      .container
+        .columns
+          .column.is-8.is-offset-2
+            .pitch.has-text-centered I'm a web developer based in Boulder, Colorado. I freelance with startups, agencies, and nonprofits to design and build rich, responsive web applications and interactive user interfaces.
+
     .container.has-text-centered
-      p I'm a web developer based in Boulder, Colorado. I freelance with startups, agencies, and nonprofits to design and build rich, responsive web applications and interactive user interfaces.
-
-  .container
-    .title.is-3.has-text-centered Recent Work
-    .columns
-      .column.has-text-centered
-        .work
-          .img-wrapper
-            img(src="/images/onemove.png")
-          a OneMove (web app)
-      .column.has-text-centered
-        .work
-          .img-wrapper
-            img(src="/images/moveline.png")
-          a Moveline (web app)
-      .column.has-text-centered
-        .work
-          .img-wrapper
-            img(src="/images/ics.png")
-          a ICS (Node.js package)
-
+      h3.h3 Recent Work
+      .tile.is-ancestor
+        .tile.is-parent
+          .tile.is-child
+            .project
+              .logo
+                img(src="/images/onemove.png")
+              .project-name: a(href="#") OneMove (web app)
+        .tile.is-parent
+          .tile.is-child
+            .project
+              .logo
+                img(src="/images/moveline.png")
+              .project-name: a(href="#") Moveline (web app)
+        .tile.is-parent
+          .tile.is-child
+            .project
+              .logo
+                img(src="/images/ics.png")
+              .project-name: a(href="#") ICS (Node.js package)
