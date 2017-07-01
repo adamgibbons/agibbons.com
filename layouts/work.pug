@@ -3,12 +3,17 @@ extends base.pug
 block content
 
   .container
+    .tabs.is-centered.is-medium
+      ul
+        li
+        li.is-active: a(href="/work/onemove") OneMove
+        li: a(href="/work/moveline") Moveline
+        li: a(href="/work/ics") ICS
+    .columns
+      .column.is-8.is-offset-2
+        .has-text-centered
+          h1.title.is-2 #{title}
+          h2.subtitle.is-4: em #{subtitle}
     .columns
       .column.is-10.is-offset-1
-        .column
-          .has-text-centered
-            h1.title #{title}
-            h2.subtitle #{subtitle}
-          
-          div!=contents
-
+        div!=contents
