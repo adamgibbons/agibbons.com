@@ -4,9 +4,7 @@
   "description": "Barebones static site generator for agibbons.com",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"WARN: No tests defined\" && exit 0",
-    "start": "gulp clean; gulp",
-    "deploy": "gulp clean; gulp deploy:production"
+    "deploy": "node deploy.js"
   },
   "author": "Adam Gibbons <adam@agibbons.com>",
   "license": "ISC",
