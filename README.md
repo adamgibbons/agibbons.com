@@ -39,5 +39,5 @@ Open your new `.env` file and replace the dummy values with your real ones.
 To deploy, first make sure you've built the project and then run:
 
 ```
-nmp run deploy
+npm run deploy
 ```
