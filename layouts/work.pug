@@ -1,0 +1,14 @@
+extends base.pug
+
+block content
+
+  .container
+    .columns
+      .column.is-10.is-offset-1
+        .column
+          .has-text-centered
+            h1.title #{title}
+            h2.subtitle #{subtitle}
+          
+          div!=contents
+

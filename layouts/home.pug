@@ -9,23 +9,25 @@ block content
             .pitch.has-text-centered I'm a web developer based in Boulder, Colorado. I freelance with startups, agencies, and nonprofits to design and build rich, responsive web applications and interactive user interfaces.
 
     .container.has-text-centered
-      h3.h3 Recent Work
+      br
+      h3.title.is-2 Recent Work
       .tile.is-ancestor
         .tile.is-parent
           .tile.is-child
             .project
               .logo
                 img(src="/images/onemove.png")
-              .project-name: a(href="#") OneMove (web app)
+              h4.title.is-4: a() OneMove (web app)
+              //- .project-name: a(href="#") OneMove (web app)
         .tile.is-parent
           .tile.is-child
             .project
               .logo
                 img(src="/images/moveline.png")
-              .project-name: a(href="#") Moveline (web app)
+              h4.title.is-4: a() Moveline (web app)
         .tile.is-parent
           .tile.is-child
             .project
               .logo
                 img(src="/images/ics.png")
-              .project-name: a(href="#") ICS (Node.js package)
+              h4.title.is-4: a() ICS (Node.js package)
