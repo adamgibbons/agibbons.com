@@ -31,7 +31,7 @@ Your site should now be running at [http://localhost:4020](http://localhost:4020
 You can ship the built site to an S3 bucket. First, you'll need to set local environmental variables specifying your AWS access key ID, secret key, and the name of the target bucket. These variables are pulled from an `.env` file which you can create by running:
 
 ```
-cp .env/copy .env
+cp .env.copy .env
 ```
 
 Open your new `.env` file and replace the dummy values with your real ones.
