@@ -1,3 +1,6 @@
+@lightBlue: #3498db;
+@darkBlue: #2980b9;
+
 body {
   min-height: 100%;
   display: flex;
@@ -7,7 +10,7 @@ body {
     flex: 1;
     padding-bottom: 2em;
     .header {
-      background-color: #3498db;
+      background-color: @lightBlue;
       padding: 1em 0;
       color: white;
       font-size: 1.2em;
@@ -27,17 +30,26 @@ body {
     }
     .content {
       font-size: 1.33em;
+      a {
+        color: @lightBlue;
+      }
     }
   }
   .footer {
-    background-color: #2980b9;
+    background-color: @darkBlue;
     padding: 1em;
     color: white;
     a {
       color: white;
       margin: .1em .5em;
+      cursor: pointer;
     }
   }
+}
+
+.tabs li.is-active a {
+  border-bottom-color: @darkBlue;
+  border-bottom-width: 2px;
 }
 
 
@@ -52,8 +64,7 @@ body {
 }
 
 .dark-bg {
-  background-color: #2980b9;
-  background-color: #2980b9;
+  background-color: @darkBlue;
 }
 
 
@@ -78,12 +89,8 @@ body {
         height: 2.1em;
       }
     }
-    .project-name {
-      font-size: .9em;
-      margin-top: .5em;
-      a {
-        color: #555;
-      }
+    .title {
+      margin-top: 1em;
     }
   }
 }

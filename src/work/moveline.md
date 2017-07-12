@@ -10,20 +10,20 @@ We developed static sites for lead generation, and a web application for custome
 
 ---
 
-![foo](/images/work/moveline/moveline-1.jpg)
+![Adam Gibbons - Moveline App image 1](/images/work/moveline/moveline-1.jpg)
 
 ---
 
-![foo](/images/work/moveline/moveline-2.jpg)
+![Adam Gibbons - Moveline App image 2](/images/work/moveline/moveline-2.jpg)
 
 ---
 
-![foo](/images/work/moveline/moveline-3.jpg)
+![Adam Gibbons - Moveline App image 3](/images/work/moveline/moveline-3.jpg)
 
 ---
 
-![foo](/images/work/moveline/moveline-4.jpg)
+![Adam Gibbons - Moveline App image 4](/images/work/moveline/moveline-4.jpg)
 
 ---
 
-![foo](/images/work/moveline/moveline-5.jpg)
+![Adam Gibbons - Moveline App image 5](/images/work/moveline/moveline-5.jpg)
