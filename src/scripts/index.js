@@ -1,18 +1,13 @@
 (function($) {
-  var list = $('#secondary-navigation li');
-  var currentUrl = window.location.pathname;
-  console.log(currentUrl);
+  function getCurrentPath() {
+    return window.location.pathname;
+  }
+  function menuItemIsInPath(idx, item) {
+    return getCurrentPath().indexOf(item.text.toLowerCase()) !== -1;
+  }
 
-  // list.map(function (idx, el) {
-  //   console.log(idx, el.innerText.toLowerCase());
-  // });
-
-  var active = list.filter(function (idx, item) {
-    // console.log(item.innerText.toLowerCase())
-    console.log(item.innerText.toLowerCase());
-    return currentUrl.indexOf(item.innerText.toLowerCase()) !== -1;
-  });
-
-  console.log(active);
-
+  $('#secondary-navigation li a')
+  .filter(menuItemIsInPath)
+  .parent()
+  .addClass('is-active');
 })(jQuery);
