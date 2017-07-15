@@ -1,0 +1,19 @@
+extends base.pug
+
+block content
+
+  .container
+    .tabs.is-centered.is-medium
+      ul#secondary-navigation
+        li
+        li: a(href="/work/onemove") OneMove
+        li: a(href="/work/moveline") Moveline
+        li: a(href="/work/ics") ICS
+    .columns
+      .column.is-8.is-offset-2
+        .has-text-centered
+          h1.title.is-2 #{title}
+          h2.subtitle.is-4: em #{subtitle}
+    .columns
+      .column.is-10.is-offset-1
+        div!=contents

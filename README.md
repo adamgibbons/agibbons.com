@@ -1,56 +1,43 @@
 # agibbons.com
 
-Barebones static site generator for agibbons.com
+Static site generator built with [Metalsmith](http://www.metalsmith.io/) and [Bulma]().
 
-This site is generated using a Gulp build process that compiles static assets (HTML, CSS, Javascript, webfonts, etc) site that can be deployed to an AWS S3 bucket.
+## Usage
 
-- Template language: Jade
-- Stylesheet language: Less
-- Front-end framework: Bootstrap 3
-
-## Installation Prerequisites
-
-- Node
-- Gulp
-
-## Install
-
-`git clone https://github.com/adamgibbons/agibbons`
-
-`cd agibbons`
-
-`npm install`
-
-## Develop and serve locally
-
-Create a file, `/config/development.json` (as a sibling to `production.json`),
-and set the url to your local instance of Tractor.
+Note - you must have node installed.
 
 ```
-{
-  "API": "your.local.api_url"
-}
+git clone git@github.com:adamgibbons/agibbons
+
+cd agibbons
+
+npm install
+
+make
 ```
 
-Now run `npm start` (this just runs `gulp build:development; gulp serve` for you).
-
-Visit [localhost:4000](http://localhost:4000) in your browser and start devving! When you save
-changes to a file within the `/lib` directory, gulp will recompile the changed file and live-reload the browser.
-
-## Deploy
-
-You can deploy the contents of the `/public` directory to staging or production AWS S3 buckets.
-First, you must have a file associated with your destination deployment environment
-(e.g. `staging2.aws.json`, `production.aws.json`) located at this repository's root directory (i.e. as a sibling to `gulpfile.js`).
-The file should have the below format (add your AWS `key` and `secret`).
+The website is now compiled at `/build`, and you can view it locally by running a local/dev server. For example - 
 
 ```
-{
-  "key": "YOUR_KEY",
-  "secret": "YOUR_SECRET",
-  "bucket": "YOUR_BUCKET",
-  "region": "AWS_BUCKET_REGION"
-}
+cd build
+
+python -m SimpleHTTPServer 4020
 ```
 
-Then run `npm run deploy-staging` or `npm run deploy-production`.
+Your site should now be running at [http://localhost:4020](http://localhost:4020)!
+
+## Deploying
+
+You can ship the built site to an S3 bucket. First, you'll need to set local environmental variables specifying your AWS access key ID, secret key, and the name of the target bucket. These variables are pulled from an `.env` file which you can create by running:
+
+```
+cp .env.copy .env
+```
+
+Open your new `.env` file and replace the dummy values with your real ones.
+
+To deploy, first make sure you've built the project and then run:
+
+```
+npm run deploy
+```

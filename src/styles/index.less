@@ -1,0 +1,96 @@
+@lightBlue: #3498db;
+@darkBlue: #2980b9;
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  .main {
+    background-color: white;
+    flex: 1;
+    padding-bottom: 2em;
+    .header {
+      background-color: @lightBlue;
+      padding: 1em 0;
+      color: white;
+      font-size: 1.2em;
+      .h1 {
+        font-weight: 900;
+        text-transform: uppercase;
+        font-size: 1.5em;
+      }
+      .h2 {
+        text-transform: lowercase;
+        font-weight: 400;
+        margin-left: .5em;
+      }
+      a {
+        color: white;
+      }
+    }
+    .content {
+      font-size: 1.33em;
+      a {
+        color: @lightBlue;
+      }
+    }
+  }
+  .footer {
+    background-color: @darkBlue;
+    padding: 1em;
+    color: white;
+    a {
+      color: white;
+      margin: .1em .5em;
+      cursor: pointer;
+    }
+  }
+}
+
+.tabs li.is-active a {
+  border-bottom-color: @darkBlue;
+  border-bottom-width: 2px;
+}
+
+
+.adam-gibbons-cartoon {
+  height: 5em;
+}
+
+.img-wrapper {
+  img {
+    height: 5em;
+  }
+}
+
+.dark-bg {
+  background-color: @darkBlue;
+}
+
+
+.home {
+  color: white;
+  /*font-weight: 500;*/
+  /*.h3 {
+    font-size: 1.5em;
+    margin: 2em 0 1em;
+    color: #666;
+  }*/
+  .pitch {
+    margin: 2em 0;
+    font-size: 1.1em;
+    font-weight: 700;
+  }
+  .project {
+    .logo {
+      border: 1px solid #ddd;
+      padding: 3em 0;
+      img {
+        height: 2.1em;
+      }
+    }
+    .title {
+      margin-top: 1em;
+    }
+  }
+}
