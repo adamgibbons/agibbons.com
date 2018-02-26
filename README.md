@@ -21,10 +21,10 @@ The website is now compiled at `/build`, and you can view it locally by running 
 ```
 cd build
 
-python -m SimpleHTTPServer 4020
+python -m SimpleHTTPServer 4000
 ```
 
-Your site should now be running at [http://localhost:4020](http://localhost:4020)!
+Your site should now be running at [http://localhost:4020](http://localhost:4000)!
 
 ## Deploying
 

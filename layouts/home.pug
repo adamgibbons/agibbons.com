@@ -6,37 +6,61 @@ block content
       .container
         .columns
           .column.is-8.is-offset-2
-            .pitch.has-text-centered I'm a web developer based in Boulder, Colorado. I design and build rich, responsive web applications and interactive user interfaces.
+            .pitch.has-text-centered I'm a freelance web developer based in Boulder, Colorado. I design and build rich, responsive web applications and interactive user interfaces. I love working with teams full of curious, driven, and collaborative people. If you're looking to build something from scratch or you need support building out an existing system, let's talk.
 
     .container.has-text-centered
-      br
-      h3.title.is-2 Recent Work
-      .tile.is-ancestor
-        .tile.is-parent
-          .tile.is-child
-            .project
-              .logo
-                img(src="/images/work/onemove/onemove-logo.png")
-              h4.title.is-4
-                a(
-                  href="/work/onemove"
-                  title="OneMove") OneMove (web app)
-              //- .project-name: a(href="#") OneMove (web app)
-        .tile.is-parent
-          .tile.is-child
-            .project
-              .logo
-                img(src="/images/work/moveline/moveline-logo.png")
-              h4.title.is-4
-                a(
-                  href="/work/moveline"
-                  title="Moveline") Moveline (web app)
-        .tile.is-parent
-          .tile.is-child
-            .project
-              .logo
-                img(src="/images/work/ics/ics-logo.png")
-              h4.title.is-4
-                a(
-                  href="/work/ics"
-                  title="ICS npm package") ICS (Node.js package)
+      .columns
+        .column
+          h3.title.is-2.has-text-centered(style="margin-top: 1em") Recent projects
+
+      .columns.is-multiline
+        .column.is-6
+          .project
+            div(style="border: 1px solid #ccc")
+              img(src="/images/bob-ross-explorer.png")
+            h4.title.is-4
+              a(
+                href="http://bob-ross-explorer.s3-website.us-east-2.amazonaws.com/#/"
+                title="OneMove") The Bob Ross Explorer
+            div.title.is-5 Vue.js + FiveThirtyEight data
+        .column.is-6
+          .project
+            img(src="/images/terraform.png")
+            h4.title.is-4
+              a(
+                href="https://medium.com/@adamdgibbons/amazon-virtual-private-clouds-with-terraform-an-introduction-tutorial-part-1-d369b6574835"
+                title="OneMove") Amazon Virtual Private Clouds with Terraform:
+                br
+                | An Introduction &amp; Tutorial
+            div.title.is-5 Medium article + Github demo repository
+
+      h3.title.is-2.has-text-centered(style="margin-top: 1em") Past work
+
+      .columns.is-multiline
+        .column.is-4
+          .project
+            .logo
+              img(src="/images/work/onemove/onemove-logo.png")
+            h4.title.is-4
+              a(
+                href="/work/onemove"
+                title="OneMove") OneMove
+            div.title.is-5 Angular + Node + PostgreSQL
+        .column.is-4
+          .project
+            .logo
+              img(src="/images/work/moveline/moveline-logo.png")
+            h4.title.is-4
+              a(
+                href="/work/moveline"
+                title="Moveline") Moveline
+            div.title.is-5 Angular + Node + MongoDB
+        .column.is-4
+          .project
+            .logo
+              img(src="/images/work/ics/ics-logo.png")
+            h4.title.is-4
+              a(
+                href="/work/ics"
+                title="ICS npm package") ICS
+            div.title.is-5 NPM package
