@@ -26,6 +26,10 @@ body {
       }
       a {
         color: white;
+        transition: all 0.1s;
+        &:hover {
+          color: orange;
+        }
       }
     }
     .content {
@@ -70,27 +74,44 @@ body {
 
 .home {
   color: white;
-  /*font-weight: 500;*/
-  /*.h3 {
-    font-size: 1.5em;
-    margin: 2em 0 1em;
-    color: #666;
-  }*/
   .pitch {
     margin: 2em 0;
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: 700;
   }
-  .project {
-    .logo {
-      border: 1px solid #ddd;
-      padding: 3em 0;
-      img {
-        height: 2.1em;
+  .project, .second-row {
+    text-align: center;
+    .title.is-4 {
+      margin: 1em 0 .33em;
+      transition: all .2s;
+      a:hover {
+        /*color: darken(#3498db, 15%);*/
+        color: orange;
       }
     }
-    .title {
-      margin-top: 1em;
+  }
+  .project img {
+      border: 1px solid #aaa;
+      transition: all 0.2s;
+      border-radius: 3px;
+      &:hover {
+        transform: scale(1.03);
+        border: 2px solid orange;
+      }
+  }
+  .second-row {
+    margin-top: 1em;
+    .logo {
+      border: 1px solid #aaa;
+      border-radius: 3px;
+      transition: all 0.2s;
+      &:hover {
+        transform: scale(1.03);
+        border: 2px solid orange;
+      }
+      img {
+        width: 300px;
+      }
     }
   }
 }
