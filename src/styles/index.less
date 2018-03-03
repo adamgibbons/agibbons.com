@@ -118,20 +118,21 @@ body {
 
 .swing {
     float: left;
-    animation: swing ease-in-out;
-    animation-duration: 6s;
+    animation: swing ease-out;
+    animation-duration: 1.5s;
+    animation-delay: .2s;
 }
  
 @keyframes swing {
-    0% { transform: rotate(12deg); }
-    10% { transform: rotate(-12deg); }
-    20% { transform: rotate(10deg); }
-    30% { transform: rotate(-10deg); }
-    40% { transform: rotate(7deg); }
-    50% { transform: rotate(-7deg); }
-    60% { transform: rotate(4deg); }
-    70% { transform: rotate(-4deg); }
-    80% { transform: rotate(2deg); }
-    90% { transform: rotate(-2deg); }
-    100% { transform: rotate(0deg); }
+    0% { transform:   rotate(0deg); }
+    10% { transform:   rotate(6deg); } 
+    20% { transform:  rotate(-6deg); }
+    30% { transform:  rotate(5deg); }
+    40% { transform:  rotate(-5deg); }
+    50% { transform:  rotate(4deg); }
+    60% { transform:  rotate(-4deg); }
+    70% { transform:  rotate(3deg); }
+    80% { transform:  rotate(-2deg); }
+    90% { transform:  rotate(1deg); }
+    100% { transform:  rotate(0deg); }
 }
