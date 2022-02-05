@@ -41,3 +41,5 @@ To deploy, first make sure you've built the project and then run:
 ```
 npm run deploy
 ```
+
+Node 10
